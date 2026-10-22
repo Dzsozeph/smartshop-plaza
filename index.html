@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smartshop Plaza - Be Smart</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  
+
+<div class="top-bar">
+    
+  <span>✔Gratis delivery over €75</span>
+  <span>✔Delivery within 1 working day</span>
+  <span>✔Gratis EU delivery over €150</span>
+</div>
+
+<nav class="nav">
+       
+  
+    <div class="logo"></div>
+
+
+    
+    
+ <a href="#reviews" class="top-review-bar">
+    <div class="top-review-content">
+        <span class="rating-score">4.7</span>
+        <div class="rating-stars">
+            ★★★★★
+        </div>
+        <span class="rating-text">
+            Excellent • 327 Reviews
+        </span>
+    </div>
+</a>
+    
+    
+    
+<div id="product-modal">
+  <div class="product-content">
+    <span class="close-btn" onclick="closeProduct()">×</span>
+    <div class="product-left">
+      <img id="product-main-image" src="">
+    </div>
+    <div class="product-right">
+      <h2 id="product-title"></h2>
+      <p id="product-description"></p>
+      <div id="product-specs"></div>
+      <h3 id="product-price"></h3>
+      <button id="add-to-cart-btn">Add to cart</button>
+    </div>
+  </div>
+</div>
+  <ul class="menu">
+  <li class="menu-item">
+    Smartphones
+    <!-- Lenyiroló lista a márkákhoz -->
+    <ul class="submenu">
+      <li class="brand-item">
+        Apple
+        <div class="mega-menu">
+          <div class="mega-grid">
+            
+           <div class="device-card" onclick="openProduct('iphone17pro')">
+              <img src="https://www.telekom.hu/shop/static-tkws-media/sku/IPHONE_17_PRO_MAX_256GB_BLU/ProductPictures/ProductPictures01/IPHONE_17_PRO_MAX_256GB_BLU_01_800.png">
+              <h4>Apple Iphone 17 Pro Max</h4>
+              <span>Flagship Series</span>
+                 <div class="specs">
+    <div class="spec">
+      <span class="icon">💾</span>
+      <span class="text">12 GB RAM</span>
+    </div>
+    <div class="spec">
+      <span class="icon">🧠</span>
+      <span class="text">Snapdragon 8 Gen 3</span>
+    </div>
+    <div class="spec">
+      <span class="icon">📸</span>
+      <span class="text">200 MP Triple Camera</span>
+    </div>
+    <div class="spec">
+      <span class="icon">📱</span>
+      <span class="text">6.73" AMOLED</span>
+    </div>
+  </div>
+            </div>
+              <div class="device-card">
+              <img src="https://www.telekom.hu/shop/static-tkws-media/sku/IPHONE_15_128GB__BLK/ProductPictures/ProductPictures01/IPHONE_15_128GB__BLK_01_800.png">
+              <h4>Apple Iphone 15</h4>
+              <span>Flagship Series</span>
+                   <div class="specs">
+    <div class="spec">
+      <span class="icon">💾</span>
+      <span class="text">12 GB RAM</span>
+    </div>
+    <div class="spec">
+      <span class="icon">🧠</span>
+      <span class="text">Snapdragon 8 Gen 3</span>
+    </div>
+    <div class="spec">
+      <span class="icon">📸</span>
+      <span class="text">200 MP Triple Camera</span>
+    </div>
+    <div class="spec">
+      <span class="icon">📱</span>
+      <span class="text">6.73" AMOLED</span>
+    </div>
+  </div>
+            </div>
+              <div class="device-card">
+              <img src="https://www.telekom.hu/shop/static-tkws-media/sku/IPHONE_17_256GB__BLK/ProductPictures/ProductPictures01/IPHONE_17_256GB__BLK_01_800.png">
+              <h4>Apple Iphone 17</h4>
+              <span>Flagship Series</span>
+                   <div class="specs">
+    <div class="spec">
+      <span class="icon">💾</span>
+      <span class="text">12 GB RAM</span>
+    </div>
+    <div class="spec">
+      <span class="icon">🧠</span>
+      <span class="text">Snapdragon 8 Gen 3</span>
+    </div>
+    <div class="spec">
+      <span class="icon">📸</span>
+      <span class="text">200 MP Triple Camera</span>
+    </div>
+    <div class="spec">
+      <span class="icon">📱</span>
+      <span class="text">6.73" AMOLED</span>
+    </div>
+  </div>
+            </div>
+           </div>
+        </div>
+      </li>
+        
+        <li class="brand-item">
+        Samsung
+        <div class="mega-menu">
+          <div class="mega-grid">
+            
+            <div class="device-card">
+              <img src="https://www.telekom.hu/shop/static-tkws-media/sku/SAM_G_A56_5GDS_128GB__LGRY/ProductPictures/ProductPictures01/SAM_G_A56_5GDS_128GB__LGRY_01_800.png">
+              <h4>Samsung A56</h4>
+              <span>Flagship Series</span>
+                 <div class="specs">
+    <div class="spec">
+      <span class="icon">💾</span>
+      <span class="text">12 GB RAM</span>
+    </div>
+    <div class="spec">
+      <span class="icon">🧠</span>
+      <span class="text">Snapdragon 8 Gen 3</span>
+    </div>
+    <div class="spec">
+      <span class="icon">📸</span>
+      <span class="text">200 MP Triple Camera</span>
+    </div>
+    <div class="spec">
+      <span class="icon">📱</span>
+      <span class="text">6.73" AMOLED</span>
+    </div>
+  </div>
+            </div>
+              <div class="device-card">
+              <img src="https://www.telekom.hu/shop/static-tkws-media/sku/SAM_GAL_S25_5G_DS_128GB_BLU/ProductPictures/ProductPictures01/SAM_GAL_S25_5G_DS_128GB_BLU_01_800.png">
+              <h4>Samsung Galaxy S25</h4>
+              <span>Flagship Series</span>
+                   <div class="specs">
+    <div class="spec">
+      <span class="icon">💾</span>
+      <span class="text">12 GB RAM</span>
+    </div>
+    <div class="spec">
+      <span class="icon">🧠</span>
+      <span class="text">Snapdragon 8 Gen 3</span>
+    </div>
+    <div class="spec">
+      <span class="icon">📸</span>
+      <span class="text">200 MP Triple Camera</span>
+    </div>
+    <div class="spec">
+      <span class="icon">📱</span>
+      <span class="text">6.73" AMOLED</span>
+        
+    </div>
+  </div>
+            </div>
+              <div class="device-card">
+              <img src="https://www.telekom.hu/shop/static-tkws-media/sku/SAM_G_A36_5GDS_128GB__LVN/ProductPictures/ProductPictures01/SAM_G_A36_5GDS_128GB__LVN_01_800.png">
+              <h4>Samsung A35</h4>
+              <span>Flagship Series</span>
+                   <div class="specs">
+    <div class="spec">
+      <span class="icon">💾</span>
+      <span class="text">12 GB RAM</span>
+    </div>
+    <div class="spec">
+      <span class="icon">🧠</span>
+      <span class="text">Snapdragon 8 Gen 3</span>
+    </div>
+    <div class="spec">
+      <span class="icon">📸</span>
+      <span class="text">200 MP Triple Camera</span>
+    </div>
+    <div class="spec">
+      <span class="icon">📱</span>
+      <span class="text">6.73" AMOLED</span>
+    </div>
+  </div>
+            </div>
+              <div class="device-card">
+              <img src="https://www.telekom.hu/shop/static-tkws-media/sku/SAM_GAL_S26_P_5GDS_512GB_BK/ProductPictures/ProductPictures01/SAM_GAL_S26_P_5GDS_512GB_BK_01_800.png">
+              <h4>Samsung S26 +</h4>
+              <span>Flagship Series</span>
+                   <div class="specs">
+    <div class="spec">
+      <span class="icon">💾</span>
+      <span class="text">12 GB RAM</span>
+    </div>
+    <div class="spec">
+      <span class="icon">🧠</span>
+      <span class="text">Snapdragon 8 Gen 3</span>
+    </div>
+    <div class="spec">
+      <span class="icon">📸</span>
+      <span class="text">200 MP Triple Camera</span>
+    </div>
+    <div class="spec">
+      <span class="icon">📱</span>
+      <span class="text">6.73" AMOLED</span>
+    </div>
+  </div>
+            </div>
+              <div class="device-card">
+              <img src="https://www.telekom.hu/shop/static-tkws-media/sku/RE_RC_SAM_GAL_S23UL_256_BLK/ProductPictures/ProductPictures01/RE_RC_SAM_GAL_S23UL_256_BLK_01_800.png">
+              <h4>Samsung S23 Ultra</h4>
+              <span>Flagship Series</span>
+                   <div class="specs">
+    <div class="spec">
+      <span class="icon">💾</span>
+      <span class="text">12 GB RAM</span>
+    </div>
+    <div class="spec">
+      <span class="icon">🧠</span>
+      <span class="text">Snapdragon 8 Gen 3</span>
+    </div>
+    <div class="spec">
+      <span class="icon">📸</span>
+      <span class="text">200 MP Triple Camera</span>
+    </div>
+    <div class="spec">
+      <span class="icon">📱</span>
+      <span class="text">6.73" AMOLED</span>
+    </div>
+  </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="brand-item">
+        Xiaomi
+        <div class="mega-menu">
+          <div class="mega-grid">
+            <div class="device-card">
+              <img src="https://www.telekom.hu/shop/static-tkws-media/sku/XIA_RMI_15_5GDS_128GB__BLK/ProductPictures/ProductPictures05/XIA_RMI_15_5GDS_128GB__BLK_05_800.png">
+              <h4>Xiaomi Redmi 15</h4>
+              <span>Performance</span>
+                 <div class="specs">
+    <div class="spec">
+      <span class="icon">💾</span>
+      <span class="text">12 GB RAM</span>
+    </div>
+    <div class="spec">
+      <span class="icon">🧠</span>
+      <span class="text">Snapdragon 8 Gen 3</span>
+    </div>
+    <div class="spec">
+      <span class="icon">📸</span>
+      <span class="text">200 MP Triple Camera</span>
+    </div>
+    <div class="spec">
+      <span class="icon">📱</span>
+      <span class="text">6.73" AMOLED</span>
+    </div>
+  </div>
+            </div>
+                 <div class="device-card">
+              <img src="https://www.telekom.hu/shop/static-tkws-media/sku/XIAOMI_15_DS5G_12_256GB_WHT/ProductPictures/ProductPictures05/XIAOMI_15_DS5G_12_256GB_WHT_05_800.png">
+              <h4>Xiaomi 15</h4>
+              <span>Performance</span>
+                      <div class="specs">
+    <div class="spec">
+      <span class="icon">💾</span>
+      <span class="text">12 GB RAM</span>
+    </div>
+    <div class="spec">
+      <span class="icon">🧠</span>
+      <span class="text">Snapdragon 8 Gen 3</span>
+    </div>
+    <div class="spec">
+      <span class="icon">📸</span>
+      <span class="text">200 MP Triple Camera</span>
+    </div>
+    <div class="spec">
+      <span class="icon">📱</span>
+      <span class="text">6.73" AMOLED</span>
+    </div>
+  </div>
+            </div>
+                 <div class="device-card">
+              <img src="https://www.telekom.hu/shop/static-tkws-media/sku/XIA_RMINOTE15PRO_DS5G256_BK/ProductPictures/ProductPictures01/XIA_RMINOTE15PRO_DS5G256_BK_01_800.png">
+              <h4>Xiaomi 15 Pro</h4>
+              <span>Performance</span>
+                      <div class="specs">
+    <div class="spec">
+      <span class="icon">💾</span>
+      <span class="text">12 GB RAM</span>
+    </div>
+    <div class="spec">
+      <span class="icon">🧠</span>
+      <span class="text">Snapdragon 8 Gen 3</span>
+    </div>
+    <div class="spec">
+      <span class="icon">📸</span>
+      <span class="text">200 MP Triple Camera</span>
+    </div>
+    <div class="spec">
+      <span class="icon">📱</span>
+      <span class="text">6.73" AMOLED</span>
+    </div>
+  </div>
+            </div>
+                 <div class="device-card">
+              <img src="https://www.telekom.hu/shop/static-tkws-media/sku/XIAOMI_15ULTRA_DS5G_512_SLV/ProductPictures/ProductPictures06/XIAOMI_15ULTRA_DS5G_512_SLV_06_800.png">
+              <h4>Xiaomi 15 Ultra</h4>
+              <span>Performance</span>
+                      <div class="specs">
+    <div class="spec">
+      <span class="icon">💾</span>
+      <span class="text">12 GB RAM</span>
+    </div>
+    <div class="spec">
+      <span class="icon">🧠</span>
+      <span class="text">Snapdragon 8 Gen 3</span>
+    </div>
+    <div class="spec">
+      <span class="icon">📸</span>
+      <span class="text">200 MP Triple Camera</span>
+    </div>
+    <div class="spec">
+      <span class="icon">📱</span>
+      <span class="text">6.73" AMOLED</span>
+    </div>
+  </div>
+            </div>
+                 <div class="device-card">
+              <img src="https://via.placeholder.com/120x160">
+              <h4>Xiaomi 17 Ultra</h4>
+              <span>Performance</span>
+            </div>
+              
+          </div>
+        </div>
+      </li>
+      <li class="brand-item">
+        OnePlus
+        <div class="mega-menu">
+          <div class="mega-grid">
+            <div class="device-card">
+              <img src="https://via.placeholder.com/120x160">
+              <h4>OnePlus 12</h4>
+              <span>Speed Master</span>
+                 <div class="specs">
+    <div class="spec">
+      <span class="icon">💾</span>
+      <span class="text">12 GB RAM</span>
+    </div>
+    <div class="spec">
+      <span class="icon">🧠</span>
+      <span class="text">Snapdragon 8 Gen 3</span>
+    </div>
+    <div class="spec">
+      <span class="icon">📸</span>
+      <span class="text">200 MP Triple Camera</span>
+    </div>
+    <div class="spec">
+      <span class="icon">📱</span>
+      <span class="text">6.73" AMOLED</span>
+    </div>
+  </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="brand-item">
+        Pixel
+        <div class="mega-menu">
+          <div class="mega-grid">
+            <div class="device-card">
+              <img src="https://via.placeholder.com/120x160">
+              <h4>Pixel 8 Pro</h4>
+              <span>Pure Android</span>
+                 <div class="specs">
+    <div class="spec">
+      <span class="icon">💾</span>
+      <span class="text">12 GB RAM</span>
+    </div>
+    <div class="spec">
+      <span class="icon">🧠</span>
+      <span class="text">Snapdragon 8 Gen 3</span>
+    </div>
+    <div class="spec">
+      <span class="icon">📸</span>
+      <span class="text">200 MP Triple Camera</span>
+    </div>
+    <div class="spec">
+      <span class="icon">📱</span>
+      <span class="text">6.73" AMOLED</span>
+    </div>
+  </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </li>
+
+      
+  <li>Accesories</li>
+  <li>Sale</li>
+  <li>Contact</li>
+</ul>
+
+
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="cart-icon" onclick="toggleCart()">
+  🛒 <span id="cart-count">0</span>
+</div>
+        <button class="login-btn" onclick="toggleAuth()">Sign up</button>
+</nav>
+
+         <!----------------------------------------------------------------LOGIN--------------------------------------------------------------->
+ <div class="video-container">
+    <video controls autoplay loop muted playsinline>
+        <source src="video_web.mp4" type="video/mp4">
+        A böngésződ nem támogatja a videót.
+    </video>
+</div>
+    
+    <div class="auth-container">
+
+  <div class="auth-box">
+    
+    <div class="auth-tabs">
+      <button class="tab-btn active" onclick="switchTab('login')">Login</button>
+      <button class="tab-btn" onclick="switchTab('register')">Register</button>
+    </div>
+
+    <!-- LOGIN -->
+    <form id="login-form" class="auth-form active">
+      <h2>Welcome Back</h2>
+
+      <div class="input-group">
+        <input type="email" required>
+        <label>Email</label>
+      </div>
+
+      <div class="input-group">
+        <input type="password" required>
+        <label>Password</label>
+      </div>
+
+      <button type="submit" class="auth-btn">Login</button>
+    </form>
+
+    <!-- REGISTER -->
+    <form id="register-form" class="auth-form">
+      <h2>Create Account</h2>
+
+      <div class="input-group">
+        <input type="text" required>
+        <label>Full Name</label>
+      </div>
+
+      <div class="input-group">
+        <input type="email" required>
+        <label>Email</label>
+      </div>
+
+      <div class="input-group">
+        <input type="password" required>
+        <label>Password</label>
+      </div>
+
+      <button type="submit" class="auth-btn">Register</button>
+    </form>
+
+  </div>
+</div>
+   <!----------------------------------------------------------------SLIDER--------------------------------------------------------------->
+    
+<div class="slider">
+  <div class="slide-track">
+    <div class="slide"><img src="xiaomi.PNG" alt=""></div>
+      <div class="slide"><img src="https://consumer.huawei.com/dam/content/dam/huawei-cbg-site/ecommerce/ro/August-2025-Launches/Pura-80-Series/Pura-80-Ultra/Features/Features-Web-04.jpg" alt=""></div>
+    <div class="slide"><img src="iphone.png" alt=""></div>
+</div>
+    </div>
+<section class="hero">
+  <h1>Next Generation Android Devices</h1>
+  <p>Premium smartphones | Price winners | Super fast delivery</p>
+    
+  <button class="cta-btn">Up to 30% off </button>
+</section>
+
+    
+
+
+<!-- Kosár panel (jobb felső sarok lebegő panel) -->
+<div id="cart-panel">
+  <h3>Your shopping cart</h3>
+  <div id="cart-items"></div>
+  <button id="checkout">Pay</button>
+</div>
+
+    
+      <section id="reviews" class="reviews-section">
+       
+    <div class="reviews-header">
+        <h2>Customer Reviews</h2>
+        <div class="overall-rating">
+            <div class="stars">
+                ★★★★★
+            </div>
+            <p>4.7 out of 5 based on 327 reviews</p>
+        </div>
+    </div>
+
+    <div class="reviews-container">
+
+        <div class="review-card">
+            <div class="review-top">
+                <div class="review-stars">★★★★★</div>
+                <span class="review-date">2 days ago</span>
+            </div>
+            <p class="review-text">
+                Absolutely amazing service. Fast delivery and top quality. 
+                I will definitely order again!
+            </p>
+            <div class="review-user">
+                <div class="avatar">A</div>
+                <div>
+                    <h4>Anna Kovács</h4>
+                    <span>Verified Customer</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="review-card">
+            <div class="review-top">
+                <div class="review-stars">★★★★★</div>
+                <span class="review-date">1 week ago</span>
+            </div>
+            <p class="review-text">
+                Great experience from start to finish. The support team was very helpful.
+            </p>
+            <div class="review-user">
+                <div class="avatar">M</div>
+                <div>
+                    <h4>Mark Smith</h4>
+                    <span>Verified Customer</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="review-card">
+            <div class="review-top">
+                <div class="review-stars">★★★★☆</div>
+                <span class="review-date">3 weeks ago</span>
+            </div>
+            <p class="review-text">
+                Very satisfied overall. One small delay but everything else was perfect.
+            </p>
+            <div class="review-user">
+                <div class="avatar">L</div>
+                <div>
+                    <h4>Laura Jensen</h4>
+                    <span>Verified Customer</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+         
+    
+</section>
+      
+   
+        <div class="payment-wrapper">
+          <div class="payment-icons"></div> 
+          
+             </div>
+       
+   <footer>  Webdesign Jonas LAB (R) 2026 </footer>
+<script>
+function toggleMenu() {
+  document.querySelector(".menu").classList.toggle("active");
+}
+</script>
+
+<script src="cart.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
